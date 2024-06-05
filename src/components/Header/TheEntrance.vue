@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-  is_guest: boolean;
+  isGuest: boolean;
   id?: string;
 }
 
@@ -8,7 +8,7 @@ defineProps<Props>();
 </script>
 
 <template>
-  <div v-if="is_guest" class="color guest">
+  <div v-if="isGuest" class="color guest">
     <button class="login__text">login</button>
   </div>
   <div v-else class="color account">

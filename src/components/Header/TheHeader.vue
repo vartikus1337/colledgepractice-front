@@ -17,7 +17,7 @@ let searchVal = ref("");
       v-model="searchVal"
       placeholder="search..."
     />
-    <Entrance :is_guest="true" />
+    <Entrance :is-guest="true" />
   </header>
 </template>
 
@@ -28,7 +28,7 @@ let searchVal = ref("");
   align-items: center;
   padding: 0px 10px;
   gap: 10px;
-  height: 65px;
+  height: 50px;
   background: #3f57ae;
 }
 
