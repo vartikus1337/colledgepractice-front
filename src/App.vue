@@ -1,10 +1,10 @@
 <script setup lang="ts">
 // @ts-ignore
-import TheHeader from "@/components/TheHeader.vue";
+import Header from "@/components/Header/TheHeader.vue";
 </script>
 
 <template>
-  <TheHeader />
+  <Header />
 </template>
 
 <style scoped></style>
