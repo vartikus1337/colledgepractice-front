@@ -1,3 +1,10 @@
+import {computed} from "vue";
+
+const props = {
+  isCarts: true,
+  isNews: false,
+}
+
 const classSection = computed(() => {
   const classes: { [key: string]: boolean } = {
     interesting__carts: props.isCarts,
@@ -7,3 +14,5 @@ const classSection = computed(() => {
     .filter((key) => classes[key])
     .join(" ");
 });
+
+console.log(classSection)
