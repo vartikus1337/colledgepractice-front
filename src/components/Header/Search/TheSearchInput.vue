@@ -38,7 +38,6 @@
 </template>
 
 <script lang="ts">
-// @ts-ignore
 import { FieldType, fieldType } from "./SearchInput.types";
 import {
   PropType,
