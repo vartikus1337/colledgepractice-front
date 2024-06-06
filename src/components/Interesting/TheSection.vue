@@ -37,10 +37,10 @@ function srcPngHelper(nameFile: string): string {
   return `/png/${nameFile}.png`;
 }
 
-const classSection = computed(() => ({
-  interesting__carts: props.isCarts,
-  interesting__news: props.isNews,
-}));
+const classSection = computed(() => {
+  if (props.isCarts) return "interesting__carts";
+  if (props.isNews) return "interesting__news";
+});
 </script>
 
 <template>
