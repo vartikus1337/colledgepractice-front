@@ -24,27 +24,23 @@ defineProps<CartProps>();
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   gap: 20px;
-  width: 298px;
-  height: 406px;
+  padding: 30px 20px;
   background: #3f57ae;
   border-radius: 25px;
 }
 
 .cart__img {
-  width: 258px;
   height: 200px;
   border-radius: 20px;
 }
 
 .cart__title {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  gap: 10px;
+  justify-content: space-around;
   width: 100%;
+  align-items: center;
+  gap: 10px;
   height: 20px;
 }
 
@@ -66,10 +62,8 @@ defineProps<CartProps>();
 
 .cart__price {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 258px;
-  height: 23px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .cart__price > h2 {

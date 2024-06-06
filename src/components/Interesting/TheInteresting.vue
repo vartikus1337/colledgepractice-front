@@ -12,11 +12,10 @@ import Section from "./TheSection.vue";
 <style scoped>
 .interesting {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   padding: 35px 10px 30px;
   gap: 20px;
   isolation: isolate;
-  height: 606px;
   background: linear-gradient(180deg, #3f57ae 0%, #6b8cff 100%);
 }
 </style>
