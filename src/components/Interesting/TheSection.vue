@@ -119,7 +119,8 @@ const classSection = computed(() => {
   color: #1e3072;
 }
 
-/* .interesting__carts-body {
+.interesting__news-body,
+.interesting__carts-body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,10 +128,6 @@ const classSection = computed(() => {
 }
 
 .interesting__news-body {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-} */
+}
 </style>

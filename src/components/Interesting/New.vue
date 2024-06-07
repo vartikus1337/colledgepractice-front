@@ -1,4 +1,3 @@
-<!-- TODO -->
 <script setup lang="ts">
 import type { NewProps } from "./TheSection.vue";
 defineProps<NewProps>();
@@ -33,7 +32,6 @@ defineProps<NewProps>();
 }
 
 .new__title > h2 {
-  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -43,17 +41,16 @@ defineProps<NewProps>();
 
 .new__title > h4 {
   height: 14px;
-  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+  padding-right: 20px;
   text-align: right;
   color: rgba(18, 34, 93, 0.6);
 }
 
 .new__img {
-  height: 110px;
-  width: 260px;
+  height: 150px;
   border-radius: 20px;
 }
 </style>

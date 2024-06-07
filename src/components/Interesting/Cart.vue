@@ -24,6 +24,7 @@ defineProps<CartProps>();
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   gap: 20px;
   padding: 30px 20px;
   background: #3f57ae;
