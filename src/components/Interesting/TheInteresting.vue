@@ -12,7 +12,7 @@ import Section from "./TheSection.vue";
 <style scoped>
 .interesting {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 35px 10px 30px;
   gap: 20px;
   isolation: isolate;

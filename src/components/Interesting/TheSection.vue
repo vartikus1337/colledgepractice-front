@@ -100,6 +100,7 @@ const classSection = computed(() => {
 <style scoped>
 .interesting__news,
 .interesting__carts {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -123,11 +124,15 @@ const classSection = computed(() => {
 .interesting__carts-body {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
 .interesting__news-body {
   flex-direction: column;
+}
+
+.interesting__carts-body {
+  justify-content: start;
+  gap: 30px;
 }
 </style>

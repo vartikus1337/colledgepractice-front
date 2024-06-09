@@ -50,7 +50,7 @@ defineProps<NewProps>();
 }
 
 .new__img {
-  height: 150px;
+  height: 120px;
   border-radius: 20px;
 }
 </style>
