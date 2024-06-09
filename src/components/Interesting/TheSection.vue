@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
+import { srcPngHelper } from "../utils";
 
 import Cart from "./Cart.vue";
 import New from "./New.vue";
@@ -58,10 +59,6 @@ const dataNews = ref<Array<NewProps>>([
     imgSrc: srcPngHelper("LitNight3desc"),
   },
 ]);
-
-function srcPngHelper(nameFile: string): string {
-  return `/png/${nameFile}.png`;
-}
 
 const classSection = computed(() => {
   if (props.isCarts) return "interesting__carts";
