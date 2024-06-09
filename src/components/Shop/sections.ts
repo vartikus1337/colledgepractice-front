@@ -1,5 +1,6 @@
 export const SECTIONS = {
   ALL: "Все",
+  PC: "PC",
   XBOX: "Xbox",
   PLAYSTATION: "PlayStation",
   NINTENDO: "Nintendo",
