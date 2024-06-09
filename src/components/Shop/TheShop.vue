@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Title from "./TheTitle.vue";
+
 import { SECTIONS, typeSections } from "./sections";
+
+import Title from "./TheTitle.vue";
+import Assortment from "./TheAssortment.vue";
 
 const selected = ref<typeSections>(SECTIONS.ALL);
 </script>
@@ -12,6 +15,7 @@ const selected = ref<typeSections>(SECTIONS.ALL);
       :selected-section="selected"
       @select-section="(s) => (selected = s)"
     />
+    <Assortment />
   </div>
 </template>
 
