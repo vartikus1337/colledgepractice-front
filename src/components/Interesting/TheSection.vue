@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import { srcPngHelper } from "../utils";
+import { srcPngHelper } from "../common/utils";
 
 import Cart from "./Cart.vue";
 import New from "./New.vue";

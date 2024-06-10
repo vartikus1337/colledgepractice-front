@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { srcPngHelper } from "../utils";
+import { srcPngHelper } from "../common/utils";
 import { SECTIONS, typeSections } from "./sections";
 
 import ShopCart from "./ShopCart.vue";

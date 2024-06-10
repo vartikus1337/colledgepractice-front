@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, inject, Ref } from "vue";
 import Logo from "./TheLogo.vue";
 import Entrance from "./TheEntrance.vue";
 import SearchInput from "./Search/TheSearchInput.vue";
 
 let searchVal = ref("");
+
+let isLogged = inject<Ref<boolean>>("isLogged");
 </script>
 
 <template>
@@ -17,7 +19,7 @@ let searchVal = ref("");
       v-model="searchVal"
       placeholder="search..."
     />
-    <Entrance :is-guest="true" />
+    <Entrance :is-guest="!isLogged" />
   </header>
 </template>
 
