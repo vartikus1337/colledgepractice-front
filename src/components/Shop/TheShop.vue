@@ -15,7 +15,7 @@ const selected = ref<typeSections>(SECTIONS.ALL);
       :selected-section="selected"
       @select-section="(s) => (selected = s)"
     />
-    <Assortment />
+    <div class="shop__body"><Assortment /></div>
   </div>
 </template>
 
@@ -26,5 +26,15 @@ const selected = ref<typeSections>(SECTIONS.ALL);
   gap: 10px;
   padding: 0 10px;
   background-color: #6b8cff;
+}
+
+.shop__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 10px;
+  gap: 50px 10px;
 }
 </style>
