@@ -6,7 +6,7 @@ import SearchInput from "./Search/TheSearchInput.vue";
 
 let searchVal = ref("");
 
-let isLogged = inject<Ref<boolean>>("isLogged");
+const isLogged = inject<Ref<boolean>>("isLogged");
 </script>
 
 <template>
