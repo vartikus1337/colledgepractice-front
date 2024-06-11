@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { Ref, provide, ref } from "vue";
 
 import { SECTIONS, typeSections } from "./sections";
 import { srcPngHelper } from "../common/utils";
@@ -8,6 +8,8 @@ import Title from "./TheTitle.vue";
 import Assortment from "./TheAssortment.vue";
 
 const selected = ref<typeSections>(SECTIONS.ALL);
+
+provide<Ref<typeSections>>("selectedPlatforms", selected);
 </script>
 
 <template>

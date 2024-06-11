@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { PropShopCart } from "./TheAssortment.vue";
+import { Ref, inject, ref } from "vue";
+import { typeSections } from "./sections";
 
 import SectionPlatform from "./SectionPlatform.vue";
+import { PropShopCart } from "./TheAssortment.vue";
+
+const selected = inject<Ref<typeSections>>("selectedPlatforms");
 
 const isActive = ref(false);
 
@@ -10,7 +13,7 @@ defineProps<PropShopCart>();
 </script>
 
 <template>
-  <div class="game">
+  <div class="game" v-show="selected && platforms.includes(selected)">
     <img
       class="game__img"
       @mouseover="isActive = !isActive"
