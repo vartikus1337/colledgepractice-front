@@ -2,6 +2,7 @@
 import { ref } from "vue";
 
 import { SECTIONS, typeSections } from "./sections";
+import { srcPngHelper } from "../common/utils";
 
 import Title from "./TheTitle.vue";
 import Assortment from "./TheAssortment.vue";
@@ -15,7 +16,10 @@ const selected = ref<typeSections>(SECTIONS.ALL);
       :selected-section="selected"
       @select-section="(s) => (selected = s)"
     />
-    <div class="shop__body"><Assortment /></div>
+    <div class="shop__body">
+      <Assortment />
+    </div>
+    <img :src="srcPngHelper('castle')" alt="" />
   </div>
 </template>
 
@@ -36,5 +40,9 @@ const selected = ref<typeSections>(SECTIONS.ALL);
   align-content: flex-start;
   padding: 10px;
   gap: 50px 10px;
+}
+
+.shop > img {
+  margin: 0 -10px;
 }
 </style>
