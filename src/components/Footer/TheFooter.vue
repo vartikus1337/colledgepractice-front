@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Comments from "./TheComments.vue";
+import SendComment from "./TheSendComment.vue";
+</script>
 
 <template>
   <div class="footer">
@@ -6,13 +9,12 @@
       <div class="footer__info-title">
         <h2>Магазин GamerMarket</h2>
       </div>
-      <a href="#">Отзывы</a>
-      <a href="#">Оставить отзыв</a>
-      <a href="#">О магазине</a>
+      <Comments />
+      <SendComment />
+      <button>О магазине</button>
     </div>
     <div class="footer__info-right">
       <div class="footer__info-about">
-        <a href="#">Конфиденциальность и файлы cookie</a>
         <a href="#">© GamerMarket 2024</a>
       </div>
     </div>
@@ -41,14 +43,6 @@
 .footer__info-title {
   display: flex;
   align-items: center;
-}
-
-.footer__info-left a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .footer__info-right {
