@@ -17,7 +17,7 @@ a:hover {
 }
 
 [class^="popup"][class$="-bg"] {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
@@ -27,4 +27,9 @@ a:hover {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.35);
     z-index: 1;
+}
+
+[class^="popup"] > *.error {
+    color: red;
+    font-size: 0.9em;
 }
