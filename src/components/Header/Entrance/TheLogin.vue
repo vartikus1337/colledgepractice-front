@@ -66,19 +66,18 @@ const unblockScroll = () => {
 const toggleScroll = () => {
   if (isScrollBlocked.value) {
     unblockScroll();
+    usernameError.value = "";
+    passwordError.value = "";
+    username.value = "";
+    password.value = "";
+    popupActive.value = false;
   } else {
     blockScroll();
   }
 };
 
 const AttemptLogin = () => {
-  popupActive.value = false;
   handleLogin();
-  usernameError.value = "";
-  passwordError.value = "";
-  username.value = "";
-  password.value = "";
-  unblockScroll();
 };
 
 onUnmounted(() => {
@@ -144,6 +143,13 @@ onUnmounted(() => {
   opacity: 1;
   padding: 30px;
   gap: 30px;
+}
+
+.popupLogin__username,
+.popupLogin__password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .popupLogin > * {
