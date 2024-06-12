@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { Ref, inject } from "vue";
+
 import Login from "./TheLogin.vue";
 import Registration from "./TheRegistration.vue";
+import Purchases from "./ThePurchases.vue";
+import Account from "./TheAccount.vue";
 
 interface Props {
   isGuest: boolean;
@@ -18,7 +21,10 @@ defineProps<Props>();
     <Login />
     <Registration />
   </div>
-  <div v-else class="color account"></div>
+  <div v-else class="color account">
+    <Purchases />
+    <Account />
+  </div>
 </template>
 
 <style scoped>
