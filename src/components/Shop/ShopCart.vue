@@ -44,6 +44,8 @@ defineProps<PropShopCart>();
 }
 
 .game__img {
+  height: 300px;
+  width: min-content;
   cursor: pointer;
 }
 

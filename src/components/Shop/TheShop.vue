@@ -37,11 +37,10 @@ provide<Ref<typeSections>>("selectedPlatforms", selected);
 .shop__body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
   padding: 10px;
-  gap: 50px 10px;
+  gap: 50px 80px;
 }
 
 .shop > img {
