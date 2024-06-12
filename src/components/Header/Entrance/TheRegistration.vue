@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { inject, onUnmounted, ref } from "vue";
+import { Ref, inject, onUnmounted, ref } from "vue";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
+
+const isLogged = inject("isLogged") as Ref<boolean>;
 
 const isScrollBlocked = ref(false);
 
@@ -70,7 +72,7 @@ const handleRegistration = async () => {
       id: id,
     });
     console.log("Registration successful:", response.data);
-    inject("isLogged", true);
+    isLogged.value = true;
   } catch (error) {
     console.error("Registration failed:", error);
   }
